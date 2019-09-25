@@ -7,9 +7,9 @@
     <version>0.0.1</version>
 
     <scm>
-        <connection>scm:git:git://github.com/westdart/myproject.git</connection>
-        <developerConnection>scm:git:git://github.com/westdart/myproject.git</developerConnection>
-        <url>scm:git:git://github.com/westdart/myproject.git</url>
+        <connection>scm:git:ssh://github.com/westdart/myproject.git</connection>
+        <developerConnection>scm:git:ssh://github.com/westdart/myproject.git</developerConnection>
+        <url>scm:git:ssh://github.com/westdart/myproject.git</url>
         <tag>myproject-0.0.1</tag>
     </scm>
 
