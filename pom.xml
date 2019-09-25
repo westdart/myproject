@@ -7,6 +7,13 @@
     <artifactId>myproject</artifactId>
     <version>0.0.1-SNAPSHOT</version>
 
+    <scm>
+        <connection>scm:git:https://github.com/westdart/myproject.git</connection>
+        <developerConnection>scm:git:https://github.com/westdart/myproject.git</developerConnection>
+        <url>scm:git:https://github.com/westdart/myproject.git</url>
+        <tag>HEAD</tag>
+    </scm>
+
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
@@ -19,4 +26,18 @@
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
     </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-release-plugin</artifactId>
+                <version>2.5.3</version>
+                <configuration>
+                    <releaseProfiles>release</releaseProfiles>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
 </project>
