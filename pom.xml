@@ -4,13 +4,13 @@
 
     <groupId>com.example</groupId>
     <artifactId>myproject</artifactId>
-    <version>0.0.1</version>
+    <version>0.0.1-SNAPSHOT</version>
 
     <scm>
         <connection>scm:git:ssh://github.com/westdart/myproject.git</connection>
         <developerConnection>scm:git:ssh://github.com/westdart/myproject.git</developerConnection>
         <url>scm:git:ssh://github.com/westdart/myproject.git</url>
-        <tag>myproject-0.0.1-SNAPSHOT</tag>
+        <tag>HEAD</tag>
     </scm>
 
     <parent>
