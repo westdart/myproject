@@ -10,7 +10,7 @@
         <connection>scm:git:ssh://github.com/westdart/myproject.git</connection>
         <developerConnection>scm:git:ssh://github.com/westdart/myproject.git</developerConnection>
         <url>scm:git:ssh://github.com/westdart/myproject.git</url>
-        <tag>myproject-0.0.1</tag>
+        <tag>myproject-0.0.1-SNAPSHOT</tag>
     </scm>
 
     <parent>
