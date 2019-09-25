@@ -8,9 +8,9 @@
     <version>0.0.1-SNAPSHOT</version>
 
     <scm>
-        <connection>scm:git:git://github.com:westdart/myproject.git</connection>
-        <developerConnection>scm:git:git://github.com:westdart/myproject.git</developerConnection>
-        <url>scm:git:git://github.com:westdart/myproject.git</url>
+        <connection>scm:git:git://github.com/westdart/myproject.git</connection>
+        <developerConnection>scm:git:git://github.com/westdart/myproject.git</developerConnection>
+        <url>scm:git:git://github.com/westdart/myproject.git</url>
         <tag>HEAD</tag>
     </scm>
 
