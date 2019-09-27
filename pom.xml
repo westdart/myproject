@@ -4,7 +4,7 @@
 
     <groupId>com.example</groupId>
     <artifactId>myproject</artifactId>
-    <version>0.0.2-SNAPSHOT</version>
+    <version>0.0.1-SNAPSHOT</version>
 
     <scm>
         <connection>scm:git:https://github.com/westdart/myproject.git</connection>
