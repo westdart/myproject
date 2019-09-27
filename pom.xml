@@ -6,12 +6,7 @@
     <artifactId>myproject</artifactId>
     <version>0.0.1-SNAPSHOT</version>
 
-    <scm>
-        <connection>scm:git:https://github.com/westdart/myproject.git</connection>
-        <developerConnection>scm:git:https://github.com/westdart/myproject.git</developerConnection>
-        <url>scm:git:https://github.com/westdart/myproject.git</url>
-        <tag>HEAD</tag>
-    </scm>
+    <url>https://github.com/westdart/myproject.git</url>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -100,4 +95,23 @@
             </build>
         </profile>
     </profiles>
+
+    <distributionManagement>
+        <repository>
+            <id>releases</id>
+            <url>http://localhost:8081/artifactory/releases</url>
+        </repository>
+        <snapshotRepository>
+            <id>snapshots</id>
+            <url>http://localhost:8081/artifactory/snapshots</url>
+        </snapshotRepository>
+    </distributionManagement>
+
+    <scm>
+        <connection>scm:git:https://github.com/westdart/myproject.git</connection>
+        <developerConnection>scm:git:https://github.com/westdart/myproject.git</developerConnection>
+        <url>scm:git:https://github.com/westdart/myproject.git</url>
+        <tag>HEAD</tag>
+    </scm>
+
 </project>
