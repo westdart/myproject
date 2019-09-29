@@ -17,3 +17,8 @@ Clean up:
 mvn release:rollback
 git tag -d myproject-0.0.1 && git push --delete origin myproject-0.0.1
 ```
+
+# Do a release and build of corresponding docker image
+```
+mvn release:prepare release:perform -P fabric8 fabric8:build
+```
