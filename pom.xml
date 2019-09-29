@@ -76,18 +76,10 @@
                         <plugin>
                             <groupId>io.fabric8</groupId>
                             <artifactId>fabric8-maven-plugin</artifactId>
-                            <executions>
-                                <execution>
-                                    <goals>
-                                        <goal>resource</goal>
-                                        <goal>build</goal>
-                                    </goals>
-                                </execution>
-                            </executions>
                             <configuration>
                                 <images>
                                     <image>
-                                        <alias>${project.artifactId}-main-image</alias> <!-- you may need to adjust/remove this depending on how/if you use aliases -->
+                                        <name>%g/myproject</name>
                                         <build>
                                             <tags combine.children="append"> <!-- append, otherwise, this will erase any other tags that may have been configured for the image -->
                                                 <tag>${project.version}</tag>
