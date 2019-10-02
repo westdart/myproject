@@ -43,44 +43,11 @@
 
     <profiles>
         <profile>
-            <id>fabric8</id>
-            <build>
-                <pluginManagement>
-                    <plugins>
-                        <plugin>
-                            <groupId>io.fabric8</groupId>
-                            <artifactId>fabric8-maven-plugin</artifactId>
-                            <executions>
-                                <execution>
-                                    <goals>
-                                        <goal>resource</goal>
-                                        <goal>build</goal>
-                                    </goals>
-                                </execution>
-                            </executions>
-                            <configuration>
-                                <images>
-                                    <image>
-                                        <name>%g/myproject</name>
-                                        <build>
-                                            <tags combine.children="append"> <!-- append, otherwise, this will erase any other tags that may have been configured for the image -->
-                                                <tag>${project.version}</tag>
-                                                <tag>latest</tag>
-                                            </tags>
-                                        </build>
-                                    </image>
-                                </images>
-                            </configuration>
-                        </plugin>
-                    </plugins>
-                </pluginManagement>
-            </build>
-        </profile>
-        <profile>
             <id>release-profile</id>
             <activation>
                 <property>
                     <name>performRelease</name>
+                    <value>true</value>
                 </property>
             </activation>
             <build>
