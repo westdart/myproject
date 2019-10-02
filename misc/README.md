@@ -19,7 +19,7 @@ git tag -d myproject-0.0.1 && git push --delete origin myproject-0.0.1
 ```
 or:
 ```
-$ set -o pipefail; tag=$(grep 'project.rel.com' release.properties | awk -F ':' '{print $NF}' | sed 's/=/-/g') && git tag -d $tag && git push --delete origin $tag && mvn release:rollback
+$ set -o pipefail; tag=$(grep 'project.rel.com' release.properties | awk -F ':' '{print $NF}' | sed 's/=/-/g') && git tag -d $tag && git push --delete origin $tag && mvn release:rollback && git push
 ```
 
 
