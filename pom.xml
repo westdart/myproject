@@ -43,6 +43,9 @@
 
     <profiles>
         <profile>
+            <id>dummyProfile</id>
+        </profile>
+        <profile>
             <id>release-profile</id>
             <activation>
                 <property>
