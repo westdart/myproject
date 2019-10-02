@@ -81,6 +81,7 @@
                                 <image>
                                     <name>%g/myproject-0.0</name>
                                     <build>
+                                        <descriptorRef>artifact-with-dependencies</descriptorRef>
                                         <contextDir>${project.basedir}/src/main/docker</contextDir>
                                         <tags combine.children="append"> <!-- append, otherwise, this will erase any other tags that may have been configured for the image -->
                                             <tag>${project.version}</tag>
