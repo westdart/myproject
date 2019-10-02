@@ -43,10 +43,7 @@
 
     <profiles>
         <profile>
-            <id>dummyProfile</id>
-        </profile>
-        <profile>
-            <id>release-profile</id>
+            <id>release</id>
             <activation>
                 <property>
                     <name>performRelease</name>
