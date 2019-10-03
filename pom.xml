@@ -71,6 +71,7 @@
                         <artifactId>fabric8-maven-plugin</artifactId>
                         <configuration>
                             <verbose>true</verbose>
+                            <registry>docker-registry-default.t1.training.local:443</registry>
                             <images>
                                 <image>
                                     <name>%g/myproject-0.0</name>
@@ -92,6 +93,7 @@
                             <execution>
                                 <goals>
                                     <goal>build</goal>
+                                    <goal>push</goal>
                                 </goals>
                             </execution>
                         </executions>
