@@ -82,7 +82,10 @@
                                     <name>%g/myproject-0.0</name>
                                     <build>
                                         <contextDir>${project.basedir}/src/main/docker</contextDir>
-                                        <tags combine.children="append"> <!-- append, otherwise, this will erase any other tags that may have been configured for the image -->
+                                        <assembly>
+                                            <descriptorRef>artifact</descriptorRef>
+                                        </assembly>
+                                        <tags> <!-- append, otherwise, this will erase any other tags that may have been configured for the image -->
                                             <tag>${project.version}</tag>
                                             <tag>latest</tag>
                                         </tags>
