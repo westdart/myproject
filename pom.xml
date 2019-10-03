@@ -85,7 +85,7 @@
                                         <assembly>
                                             <descriptorRef>artifact</descriptorRef>
                                         </assembly>
-                                        <tags> <!-- append, otherwise, this will erase any other tags that may have been configured for the image -->
+                                        <tags combine.children="append"> <!-- append, otherwise, this will erase any other tags that may have been configured for the image -->
                                             <tag>${project.version}</tag>
                                             <tag>latest</tag>
                                         </tags>
