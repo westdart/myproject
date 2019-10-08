@@ -88,6 +88,12 @@
                                     </build>
                                 </image>
                             </images>
+                            <authConfig>
+                                <push>
+                                    <username>admin</username>
+                                    <password>password</password>
+                                </push>
+                            </authConfig>
                         </configuration>
                         <executions>
                             <execution>
